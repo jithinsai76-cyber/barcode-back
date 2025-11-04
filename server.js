@@ -5,7 +5,7 @@ const cors = require('cors');
 require('dotenv').config(); // Loads environment variables from .env file
 
 // 2. Import your Product model
-const Product = require('./models/Product');
+const Product = require('./models/product');
 
 // 3. Initialize the app
 const app = express();
@@ -98,4 +98,5 @@ app.get('/api/products', async (req, res) => {
 // --- Start the Server ---
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
+
 });
